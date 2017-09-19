@@ -1,0 +1,423 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-scrollbar {
+    display: none;
+}
+
+::-moz-selection { background-color: none; color: #006bff ; }
+::selection { background-color: none; color: #006bff ; }
+
+html {
+	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	overflow: scroll;
+}
+
+.projectzone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #032863;
+  width: 100vw;
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+
+.archive {
+  display: none;
+  z-index: 998;
+  background-color: transparent;
+  position: relative;
+  width: 85vw;
+  height: auto;
+  float: top;
+  left: 15vw;
+  top: 0;
+  margin-top: 0;
+  min-height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.aDown {
+  font-size: 20;
+  position: fixed;
+  top: 0vh;
+  left: 100px;
+  margin-top: 0;
+  cursor: pointer;
+  margin-left: 0;
+  z-index: 999 !important;
+}
+
+.aDown:hover,.aboutDown:hover,.title:hover,.infoButton:hover {
+  text-decoration: underline;
+}
+
+.prev,.next {
+  margin: 0;
+  cursor: pointer !important;
+  z-index: 999 !important;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 47%;
+}
+
+.prev {
+  left: 2vw;
+}
+
+.next {
+  right: 1vw;
+}
+
+.aboutDown {
+  font-size: 20;
+  position: fixed;
+  top: 0vh;
+  left: 200px;
+  margin-top: 0;
+  cursor: pointer;
+  margin-left: 0;
+  z-index: 999 !important;
+}
+
+.infoButton {
+  z-index: 999;
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  right: 10px;
+  font-size: 20;
+  cursor: pointer;
+}
+
+.project {
+	display: inline;
+	margin-top: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.info {
+  display: none;
+  margin: 0;
+	top: 0;
+	position: absolute;
+	left: 350px;
+	width: 50vw !important;
+	height: auto;
+	font-size: 20;
+  color: black;
+  z-index: 999;
+}
+
+.info > p {
+  margin-top: 0;
+}
+
+.title {
+  cursor: pointer;
+  z-index: 999;
+  font-size: 20;
+  position: fixed;
+  top: 0vh;
+  left: 10px;
+	margin: 0;
+  margin-left: 0 !important;
+}
+
+.title:hover {
+	background-color: none !important;
+}
+
+.title:first-child:hover {
+	margin-top: 0 !important;
+}
+
+.container {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 95;
+}
+
+.descP {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 20;
+  top: 0;
+  margin-bottom: -5px;
+}
+
+.carousel-cell {
+  margin-right: 10vw;
+  margin-left: 10vw;
+  position: relative;
+  width: 65vw;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.flickity-page-dots {
+  position: absolute;
+  bottom: 2vh;
+  margin: 0;
+}
+
+.flickity-page-dots > .dot{
+  /*display: none;*/
+  opacity: 1;
+  border-radius: 2px;
+  background-color: black !important;
+}
+
+.flickity-page-dots > .dot.is-selected{
+  /*display: none;*/
+  opacity: 1;
+  border-radius: 0;
+  background-color: white !important;
+  /*border: 2px solid black;*/
+}
+
+.gImage > p {
+  position: absolute;
+  left: 50%;
+  width: 50vw;
+  font-size: 20;
+  top: 45%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+}
+
+.gImage > img {
+  z-index: 999;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  float: left;
+  height: 70vh;
+  width: auto;
+  transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+}
+
+.line {
+  text-decoration: underline;
+}
+
+.archiveImage > img {
+  z-index: 999 !important;
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0vw;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.archivepost {
+  position: relative;
+  top: 10vh;
+  left: 0;
+  width: 33vw;
+  height: auto;
+  cursor: pointer;
+  z-index: 998;
+  float: left;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.archivepost:hover {
+  opacity: .7;
+}
+
+.about {
+  position: absolute;
+  display: none;
+  width: 100vw;
+  height: auto;
+  left: 0;
+  top: 0 !important;
+  margin-top: 0;
+}
+
+.aboutImage > img {
+  position: absolute;
+  left: 18vw;
+  top: 12vh;
+  height: auto;
+  width: 27vw;
+}
+
+.aInfo {
+  margin-top: 0;
+  margin: 0;
+  position: absolute;
+  color: black;
+  top: 12vh;
+  right: 18vw;
+  width: 30vw;
+  padding-bottom: 5vh;
+}
+
+.aInfo > p {
+  font-size: 20;
+  /*position: relative;*/
+  margin: 0;
+  margin-top: 0;
+}
+
+.out {
+  position: fixed !important;
+  top: 50px;
+  right: 50px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 999 !important;
+}
+
+.view {
+  position: fixed;
+  top: 15vh;
+  height: 70vh;
+  width: auto;
+  z-index: 999 !important;
+  left: 50%;
+  transform:translate(-50%,0%);
+  -webkit-transform:translate(-50%,0%);
+}
+
+
+
+
+@media screen and (max-width: 736px) {
+
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .infoButton,.aboutDown,.aDown {
+    z-index: 999 !important;
+    font-size: 20 !important;
+    position: fixed !important;
+  }
+
+  .aDown {
+    left: 49%;
+    transform:translate(-50%,0%);
+    -webkit-transform:translate(-50%,0%);
+  }
+
+  .aboutDown {
+    left: 84% !important;
+  }
+
+	.up {
+		position: absolute;
+		display: inline;
+		top: 123%;
+	}
+
+	.carousel-cell {
+		width: 70%;
+		margin-left: 50%;
+		margin-right: 50%;
+	}
+
+  .descP {
+    margin-bottom: 0;
+  }
+
+	.carousel-cell > img {
+		width: 100%;
+		height: auto;
+	}
+
+	.prev,.next {
+        display: none !important;
+	}
+
+	.infoButton,.info {
+		display:none !important;
+	}
+
+  .archive {
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+  }
+
+  .archivepost {
+    top: 18vh;
+    left: 10vw !important;
+    width: 80vw !important;
+    pointer-events: none;
+  }
+
+  .aboutImage > img {
+    position: relative;
+    display: inline;
+    top: 15vh;
+    width: 80vw!important;
+    height: auto;
+    left: 10vw;
+    margin-left: 0 !important;;
+    margin-bottom: 10vh;
+    z-index: -1;
+  }
+
+  .aInfo {
+    position: relative;
+    float: left;
+    display: inline;
+    width: 80vw;
+    left: 10vw;
+  }
+
+  .flickity-page-dots {
+    display: none;
+  }
+
+  .gImage > p {
+    width: 70vw;
+    left: 48%;
+    top: 48%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+  }
+
+}
